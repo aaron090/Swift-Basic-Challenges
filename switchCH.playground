@@ -1,0 +1,26 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var numeros = 0...100   //cadena de numeros del 1 al 100
+
+for id in numeros
+{
+    switch id
+    {
+    case 0:     //imprimir 0 no es par ni impar
+        print("\(id)")
+    case 30...40:
+        print("\(id) Viva Swift!!!")
+    default:
+        if(id % 5 == 0)
+        {
+            print("\(id) BINGO!!!")
+        }else if(id % 2 == 0)
+        {
+            print("\(id) par")
+        }else{
+            print("\(id) impar")
+        }
+    }
+}
